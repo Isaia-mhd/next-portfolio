@@ -20,10 +20,10 @@ export default function RootLayout({
               <ul className=" w-full h-full flex justify-between items-center gap-9">
                   <div className="w-6 h-6"><Link href="/"><img src="dcdc" alt="Logo" /></Link></div>
                   <div className="flex items-center gap-3 md:gap-6 lg:gap-9">
-                      <li className="text-white text-sm font-thin "><Link className=" py-1 px-2 rounded-md border-blue-500" href="/">Home</Link></li>
-                      <li className="text-white text-sm font-thin "><Link className=" py-1 px-2 rounded-md border-blue-500" href="/projects">Projects</Link></li>
-                      <li className="text-white text-sm font-thin "><Link className=" py-1 px-2 rounded-md border-blue-500" href="/about">About</Link></li>
-                      <li className="text-white text-sm font-thin "><Link className=" py-1 px-2 rounded-md border-blue-500" href="/contact">Contact</Link></li>
+                      <li className="text-white text-sm font-thin "><Link className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000" href="/">Home</Link></li>
+                      <li className="text-white text-sm font-thin "><Link className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000" href="/projects">Projects</Link></li>
+                      <li className="text-white text-sm font-thin "><Link className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000" href="/about">About</Link></li>
+                      <li className="text-white text-sm font-thin "><Link className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000" href="/contact">Contact</Link></li>
                   </div>
               </ul>
           </div>
