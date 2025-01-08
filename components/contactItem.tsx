@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const ContactItem = () => {
   return (
     <div id='contact' className="w-full mt-2 mb-12 rounded-md max-w-[400px] md:max-w-[80%] mx-auto">
