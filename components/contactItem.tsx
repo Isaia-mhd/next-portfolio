@@ -1,11 +1,12 @@
+import React from 'react'
 
-export default function Contact() {
+const ContactItem = () => {
   return (
-        <div className="w-full h-[300px] mt-2 mb-2 rounded-md max-w-[400px] md:max-w-[80%] mx-auto">
-        <form action="" method="POST" className="w-full max-w-[400px] mx-auto md:max-w-[50%] lg:max-w-[40%] md:mx-0 py-2 rounded-lg">
+    <div id='contact' className="w-full mt-2 mb-12 rounded-md max-w-[400px] md:max-w-[80%] mx-auto">
             <div className="mb-4 text-white font-semibold">
                 <h1 className="text-2xl ">Contact</h1>
             </div>
+        <form action="" method="POST" className="w-full max-w-[400px] mx-auto md:max-w-[50%] lg:max-w-[40%] md:mx-0 py-2 rounded-lg">
             <div className="flex flex-col gap-2 mb-6">
                 <label htmlFor="name" className="text-white text-sm font-semibold">Name</label>
                 <input
@@ -38,5 +39,4 @@ export default function Contact() {
   )
 }
 
-
-
+export default ContactItem
