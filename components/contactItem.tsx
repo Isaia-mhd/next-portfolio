@@ -14,7 +14,7 @@ const ContactItem = () => {
                 type="text"
                 name="name"
                 id="name"
-                className="rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-4 focus:border-blue-700 py-2 " placeholder="Name" />
+                className="bg-slate-950 rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2 " placeholder="Name" />
             </div>
             <div className="flex flex-col gap-2 mb-6">
                 <label htmlFor="email" className="text-white text-sm font-semibold">E-mail</label>
@@ -22,7 +22,7 @@ const ContactItem = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-4 focus:border-blue-700 py-2 " placeholder="johndoe@gmail.com" />
+                className="bg-slate-950 rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2 " placeholder="johndoe@gmail.com" />
             </div>
             <div className="flex flex-col gap-2 mb-6">
                 <label htmlFor="name" className="text-white text-sm font-semibold">Message</label>
@@ -30,7 +30,7 @@ const ContactItem = () => {
                 name="name"
                 id="name"
                 placeholder="Text here!"
-                className="h-[100px] rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-4 focus:border-blue-700 py-2 "></textarea>
+                className="bg-slate-950 h-[100px] rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2 "></textarea>
             </div>
             <div className="flex flex-col gap-2 mb-6">
                 <button type="submit" className="bg-blue-600 py-2 px-5 text-sm text-white rounded font-light w-[100px] hover:bg-blue-700 transition duration-150 ease-in-out active:bg-blue-800">Send</button>
