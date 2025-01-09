@@ -1,5 +1,4 @@
 import { BackgroundBeamsWithCollision } from '@/components/ui/background-beams-with-collision'
-import Link from 'next/link'
 import React from 'react'
 import InfiniteMovingCardsDemo from './projectslide'
 
