@@ -1,15 +1,34 @@
-import Link from 'next/link'
-import React from 'react'
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import Link from "next/link";
+import React from "react";
 
 const AboutItem = () => {
   return (
-    <div id='about' className="w-full mt-2 mb-12 rounded-md max-w-[400px] md:max-w-[80%] mx-auto">
-        <div className="w-full max-w-[400px] mx-auto md:max-w-[80%] md:mx-0 md:w-[50%] h-full bg-slate-950 py-2 rounded-lg">
-            <h1>ABOUT ME</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero corporis non laudantium perspiciatis eum, sit in asperiores? Dicta, sunt doloremque magni nemo non omnis excepturi ut dolorem nesciunt asperiores sit fugit pariatur quae temporibus quod, iste, id perspiciatis. Neque voluptas at libero vero, dolores fuga aliquam atque amet in aperiam rerum provident similique praesentium doloribus excepturi dolorum aspernatur sint cupiditate quibusdam obcaecati nemo tempora minus blanditiis. Quo quia voluptas impedit asperiores ex soluta. Nostrum perspiciatis autem velit porro aperiam debitis excepturi, nobis perferendis soluta dolorum voluptates quaerat optio unde laborum expedita suscipit repellat alias animi ipsam itaque! Esse, tempore fuga.</p>
-        </div>
-    </div>
-  )
-}
+    <BackgroundBeamsWithCollision className="w-full max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
+      <div className="flex flex-col justify-center items-center">
+        <p className="text-4xl font-bold text-purple-700">About me</p>
+        <p className="text-slate-400 text-sm font-bold">
+          &lt;&gt;Introduction&lt;/&gt;
+        </p>
+      </div>
 
-export default AboutItem
+      <div className="w-full h-[50px] flex justify-center gap-4 mb-12">
+        <Link
+          href="#contact"
+          className="text-xs lg:text-md font-semibold py-4 px-2 lg:px-7 border-2 border-transparent !bg-gradient-to-tl !from-blue-800 !to-purple-800 !rounded-full text-md text-white hover:bg-blue-900 transition duration-150 ease-in-out"
+        >
+          Contact me
+        </Link>
+        <a
+          href="/resume/Isaia_resume.pdf"
+          download
+          className="text-xs lg:text-md font-semibold py-4 px-2 lg:px-7 bg-none border-2 border-blue-500 !rounded-full text-md text-white hover:border-purple-900 transition duration-500 ease-in-out"
+        >
+          Download my resume
+        </a>
+      </div>
+    </BackgroundBeamsWithCollision>
+  );
+};
+
+export default AboutItem;
