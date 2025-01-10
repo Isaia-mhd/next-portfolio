@@ -74,7 +74,12 @@ const ContactItem = () => {
             </button>
           </div>
         </form>
-        <p>{status}</p>
+        <p 
+        className={
+            status === "Envoi en cours..." ? "text-white" : 
+            status === "Email envoyé avec succès!" ? "text-green-500" : 
+            "text-red-500" 
+        }>{status}</p>
       </div>
     </BackgroundBeamsWithCollision>
   );
