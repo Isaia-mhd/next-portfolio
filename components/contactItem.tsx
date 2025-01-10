@@ -11,7 +11,7 @@ const ContactItem = () => {
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    setStatus('Envoi en cours...');
+    setStatus('Sending...');
 
     try {
       const response = await axios.post('http://localhost:8000/api/send-email', {
@@ -21,10 +21,10 @@ const ContactItem = () => {
       });
 
       if (response.data.message) {
-        setStatus('Email envoyé avec succès!');
+        setStatus('Email was sent successfully!');
       }
     } catch (error) {
-      setStatus('Erreur lors de l\'envoi de l\'email.');
+      setStatus("Error while sending the email");
       console.error(error);
     }
   };
@@ -76,8 +76,8 @@ const ContactItem = () => {
         </form>
         <p 
         className={
-            status === "Envoi en cours..." ? "text-white" : 
-            status === "Email envoyé avec succès!" ? "text-green-500" : 
+            status === "Sending..." ? "text-white" : 
+            status === "Email was sent successfully!" ? "text-green-500" : 
             "text-red-500" 
         }>{status}</p>
       </div>
