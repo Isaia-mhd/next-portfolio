@@ -14,7 +14,7 @@ const ContactItem = () => {
     setStatus('Sending...');
 
     try {
-      const response = await axios.post('http://localhost:8000/api/send-email', {
+      const response = await axios.post('https://laravel-portfolio-api-production.up.railway.app/api/send-email', {
         email,
         subject,
         message,
