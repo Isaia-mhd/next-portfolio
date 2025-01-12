@@ -24,6 +24,10 @@ const ContactItem = () => {
 
       if (response.data.message) {
         setStatus('Email was sent successfully!');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
       }
     } catch (error) {
       setStatus("Error while sending the email");
@@ -45,7 +49,7 @@ const ContactItem = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="bg-slate-950 rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
+              className="bg-slate-950 rounded-lg px-3 text-gray-200 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
               placeholder="Name"
             />
           </div>
@@ -56,7 +60,7 @@ const ContactItem = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="bg-slate-950 rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
+              className="bg-slate-950 rounded-lg px-3 text-gray-200 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
               placeholder="E-mail"
             />
           </div>
@@ -67,7 +71,7 @@ const ContactItem = () => {
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               required
-              className="bg-slate-950 rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
+              className="bg-slate-950 rounded-lg px-3 text-gray-200 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
               placeholder="Subject"
             />
           </div>
@@ -78,7 +82,7 @@ const ContactItem = () => {
               onChange={(e) => setMessage(e.target.value)}
               required
               placeholder="Text here!"
-              className="bg-slate-950 h-[100px] rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
+              className="bg-slate-950 h-[100px] rounded-lg px-3 text-gray-200 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
             ></textarea>
           </div>
           <div className="flex flex-col gap-2 mb-6">
