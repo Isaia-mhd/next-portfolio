@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const ContactItem = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
@@ -15,6 +16,7 @@ const ContactItem = () => {
 
     try {
       const response = await axios.post('https://isaia-portfolio-api.up.railway.app/api/send-email', {
+        name,
         email,
         subject,
         message,
@@ -35,6 +37,17 @@ const ContactItem = () => {
         <form onSubmit={handleSubmit} className="w-full max-w-[400px] mx-auto md:max-w-[50%] lg:max-w-[40%] md:mx-0 py-2 rounded-lg">
           <div className="mb-4 text-white font-semibold">
             <h1 className="text-4xl font-bold text-purple-700">Contact me</h1>
+          </div>
+          <div className="flex flex-col gap-2 mb-6">
+            <label htmlFor="name" className="text-white text-sm font-semibold">Name</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+              className="bg-slate-950 rounded-lg px-3 text-slate-700 text-sm font-semibold focus:outline-none border-2 focus:border-blue-700 py-2"
+              placeholder="Name"
+            />
           </div>
           <div className="flex flex-col gap-2 mb-6">
             <label htmlFor="email" className="text-white text-sm font-semibold">E-mail</label>
