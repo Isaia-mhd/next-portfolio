@@ -1,4 +1,5 @@
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -14,7 +15,7 @@ const AboutItem = () => {
 
       <div className="w-full flex justify-between items-start gap-10">
         <div className="w-[40%] h-[400px] rounded-md">
-          <img
+          <Image
             src="/images/pic.jpg"
             alt="my_pic"
             className="w-full h-full rounded-3xl"

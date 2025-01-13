@@ -1,7 +1,6 @@
 "use client";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import React, { useState } from "react";
-import InfiniteMovingCardsDemo from "./projectslide";
 
 const ProjectItem = () => {
   const [isActive, setIsActive] = useState(false);
@@ -48,7 +47,7 @@ const ProjectItem = () => {
 
       <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 place-items-center px-4 rounded-lg">
         {projects.map((project) => (
-          <div className="border-2 w-full h-[400px] p-3 rounded-lg ">
+          <div className="border-2 w-full h-[400px] p-3 rounded-lg " key={project.name}>
             <div
               className="w-full h-[70%] rounded-md"
               style={{
