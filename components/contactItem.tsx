@@ -40,7 +40,7 @@ const ContactItem = () => {
       <div id="contact" className="w-full mt-2 mb-12 rounded-md max-w-[400px] md:max-w-[80%] mx-auto">
         <form onSubmit={handleSubmit} className="w-full max-w-[400px] mx-auto md:max-w-[50%] lg:max-w-[40%] md:mx-0 py-2 rounded-lg">
           <div className="mb-4 text-white font-semibold">
-            <h1 className="text-4xl font-bold text-purple-700">Contact me</h1>
+            <h1 className="text-4xl font-bold text-purple-700 pt-[60px]">Contact me</h1>
           </div>
           <div className="flex flex-col gap-2 mb-6">
             <label htmlFor="name" className="text-white text-sm font-semibold">Name</label>

@@ -29,34 +29,34 @@ export default function RootLayout({
                   />
                 </Link>
               </div>
-              <div className="flex items-center gap-3 md:gap-6 lg:gap-9">
-                <li className="text-white text-sm font-thin">
+              <div className="flex justify-center items-center gap-3 md:gap-6 lg:gap-9">
+                <li className="text-blue-700 text-sm md:text-sm font-semibold">
                   <Link
-                    className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
+                    className=" inline-block px-1 py-1 text-blue-700 border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
                     href="/"
                   >
                     Home
                   </Link>
                 </li>
-                <li className="text-white text-sm font-thin">
+                <li className="text-blue-700 text-sm md:text-sm font-semibold">
                   <Link
-                    className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
+                    className=" inline-block px-1 py-1 text-blue-700 border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
                     href="#project"
                   >
-                    Projects
+                    Portfolio
                   </Link>
                 </li>
-                <li className="text-white text-sm font-thin">
+                <li className="text-blue-700 text-sm md:text-sm font-semibold">
                   <Link
-                    className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
+                    className=" inline-block px-1 py-1 text-blue-700 border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
                     href="#about"
                   >
-                    Aabout
+                    About
                   </Link>
                 </li>
-                <li className="text-white text-sm font-thin">
+                <li className="text-blue-700 text-sm md:text-sm font-semibold">
                   <Link
-                    className=" inline-block px-4 py-1 text-white text-sm border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
+                    className=" inline-block px-1 py-1 text-blue-700 border-2 border-transparent rounded-md hover:border-blue-500 hover:bg-none hover:text-blue-500 transition duration-1000"
                     href="#contact"
                   >
                     Contact

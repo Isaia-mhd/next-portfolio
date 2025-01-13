@@ -1,7 +1,20 @@
-import { BackgroundBeamsWithCollision } from '@/components/ui/background-beams-with-collision'
-import React from 'react'
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import React from "react";
 
 const CompetenceItem = () => {
+  const frontSkills = [
+    { tech: "HTML", level: "80%" },
+    { tech: "CSS", level: "70%" },
+    { tech: "JAVASCRIPT", level: "50%" },
+    { tech: "REACT JS", level: "60%" },
+    { tech: "NEXT JS", level: "40%" },
+  ];
+  const backSkills = [
+    { tech: "PHP", level: "80%" },
+    { tech: "LARAVEL", level: "70%" },
+    { tech: "FIREBASE", level: "50%" },
+    { tech: "PYTHON", level: "50%" },
+  ];
   return (
     <BackgroundBeamsWithCollision className="w-full max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
       <div className="flex flex-col justify-center items-center">
@@ -11,15 +24,49 @@ const CompetenceItem = () => {
         </p>
       </div>
 
-      <div className="w-full h-[400px]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 place-items-center px-4 rounded-lg mb-12">
-        <div className="bg-blue-950 w-full h-[80%] p-3 rounded-lg">
-            <h1 className="text-center text-xl text-blue-500 font-bold">Web developpment</h1>
+      <div className="w-full rounded-lg">
+        <div className="bg-blue-950 w-full p-3 rounded-lg flex flex-col gap-10 justify-start items-center">
+          <h1 className="text-center text-xl text-blue-500 font-bold">
+            Web developpment
+          </h1>
+          <div className="w-full flex justify-around">
+            <ul className="w-[400px]">
+            <h2 className="text-center text-sm font-semibold">FRONT END</h2>
+              {frontSkills.map((skill) => (
+                <li className="w-full pb-4" key={skill.tech}>
+                  <p className="flex justify-between w-full text-xs font-light">
+                    <span> {skill.tech} </span> {skill.level}
+                  </p>
+                  <div className="w-full bg-slate-100 h-2 !rounded-md">
+                    <div
+                      className={`!bg-blue-700 h-full`}
+                      style={{ width: `${skill.level}` }}
+                    ></div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <ul className="w-[400px]">
+            <h2 className="text-center text-sm font-semibold">BACK END</h2>
+              {backSkills.map((skill) => (
+                <li className="w-full pb-4" key={skill.tech}>
+                  <p className="flex justify-between w-full text-xs font-light">
+                    <span> {skill.tech} </span> {skill.level}
+                  </p>
+                  <div className="w-full bg-slate-100 h-2 !rounded-md">
+                    <div
+                      className={`!bg-blue-700 h-full`}
+                      style={{ width: `${skill.level}` }}
+                    ></div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        {/* <div className="bg-slate-300 w-full h-[80%] p-3 rounded-lg "></div>
-        <div className="bg-slate-300 w-full h-[80%] p-3 rounded-lg "></div> */}
       </div>
     </BackgroundBeamsWithCollision>
-  )
-}
+  );
+};
 
-export default CompetenceItem
+export default CompetenceItem;
