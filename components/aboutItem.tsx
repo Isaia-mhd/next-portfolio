@@ -19,6 +19,8 @@ const AboutItem = () => {
             src="/images/pic.jpg"
             alt="my_pic"
             className="w-full h-full rounded-3xl"
+            width={500}
+            height={300}
           />
         </div>
         <div className="w-full">

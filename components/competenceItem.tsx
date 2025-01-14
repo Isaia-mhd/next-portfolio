@@ -29,8 +29,8 @@ const CompetenceItem = () => {
           <h1 className="text-center text-xl text-blue-500 font-bold">
             Web developpment
           </h1>
-          <div className="w-full flex justify-around">
-            <ul className="w-[400px]">
+          <div className="w-full flex flex-col items-center gap-8 lg:flex-row justify-around">
+            <ul className="w-full sm:w-[80%] ">
             <h2 className="text-center text-sm font-semibold">FRONT END</h2>
               {frontSkills.map((skill) => (
                 <li className="w-full pb-4" key={skill.tech}>
@@ -46,7 +46,7 @@ const CompetenceItem = () => {
                 </li>
               ))}
             </ul>
-            <ul className="w-[400px]">
+            <ul className="w-full sm:w-[80%] ">
             <h2 className="text-center text-sm font-semibold">BACK END</h2>
               {backSkills.map((skill) => (
                 <li className="w-full pb-4" key={skill.tech}>
