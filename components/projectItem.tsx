@@ -21,7 +21,7 @@ const ProjectItem = () => {
       tech: "React Js / Firebase",
       status: "Personal",
       imgUrl: "url('/images/realtor.png')",
-      url: "https://isaia-react-project.vercel.app/"
+      url: "https://isaia-realtor-clone.vercel.app/"
     },
     {
       name: "E-Commerce",

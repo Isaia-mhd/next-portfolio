@@ -1,6 +1,6 @@
 // import { Text } from '@mantine/core'
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import Link from "next/link";
+
 
 const HomeItem = () => {
   return (
