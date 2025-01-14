@@ -7,13 +7,13 @@ const CompetenceItem = () => {
     { tech: "CSS", level: "70%" },
     { tech: "JAVASCRIPT", level: "50%" },
     { tech: "REACT JS", level: "60%" },
-    { tech: "NEXT JS", level: "40%" },
+    { tech: "NEXT JS", level: "50%" },
   ];
   const backSkills = [
-    { tech: "PHP", level: "80%" },
-    { tech: "LARAVEL", level: "70%" },
+    { tech: "PHP", level: "70%" },
+    { tech: "LARAVEL", level: "60%" },
+    { tech: "PYTHON", level: "40%" },
     { tech: "FIREBASE", level: "50%" },
-    { tech: "PYTHON", level: "50%" },
   ];
   return (
     <BackgroundBeamsWithCollision className="w-full max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
@@ -25,11 +25,11 @@ const CompetenceItem = () => {
       </div>
 
       <div className="w-full rounded-lg">
-        <div className="bg-blue-950 w-full p-3 rounded-lg flex flex-col gap-10 justify-start items-center">
+        <div className="bg-slate-900 w-full p-3 rounded-lg flex flex-col gap-10 justify-start items-center">
           <h1 className="text-center text-xl text-blue-500 font-bold">
             Web developpment
           </h1>
-          <div className="w-full flex flex-col items-center gap-8 lg:flex-row justify-around">
+          <div className="w-full flex flex-col items-center gap-8 lg:flex-row justify-around lg:items-start">
             <ul className="w-full sm:w-[80%] ">
             <h2 className="text-center text-sm font-semibold">FRONT END</h2>
               {frontSkills.map((skill) => (
