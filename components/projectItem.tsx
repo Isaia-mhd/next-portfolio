@@ -1,6 +1,6 @@
 "use client";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const ProjectItem = () => {
   // const [isActive, setIsActive] = useState(false);
