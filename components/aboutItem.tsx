@@ -25,15 +25,15 @@ const AboutItem = () => {
           />
         </div>
         {/* TEXT DESCRIPTIVE */}
-        <div className="w-full pt-[30px] lg:pt-0 text-center ">
+        <div className="w-full pt-[30px] lg:pt-0 text-center lg:text-start ">
         <p className="text-slate-300 text-md">
   {`Hello, I'm Andoniaina Isaia Mohamed, a web developer. I'm ${
     currentYear - 2003
   } years old. I'm a student, and since 2024, I have been studying Computer Science at ENI (Ecole Nationale d'Informatique), Fianarantsoa, Madagascar. Before starting my studies at ENI, in 2023 precisely, I completed a web development training at Gasy Tech, Antananarivo. It lasted about five months. Thanks to this training, I acquired basic knowledge in web development, including HTML5, CSS3, JavaScript, and PHP. After this training, I created an e-commerce project using PHP. This project involved selling drinks online. Check my portfolio if you'd like to see it.`}
 </p>
-          <p className="text-slate-300 text-md">
+          {/* <p className="text-slate-300 text-md">
             
-          </p>
+          </p> */}
 
           {/* BOUTTON de CV et CONTACT */}
           <div className="w-full h-[50px] mx-auto flex justify-center lg:justify-start gap-4 mb-12 mt-6">
