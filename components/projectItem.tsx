@@ -27,7 +27,7 @@ const ProjectItem = () => {
     },
     {
       name: "E-Commerce",
-      description: "This project is in the process of building",
+      description: "This project is in progress.",
       slug: "E-comm is a...",
       tech: "Blade / Laravel",
       status: "Personal",
