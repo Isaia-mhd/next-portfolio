@@ -7,7 +7,7 @@ const ProjectItem = () => {
   const projects = [
     {
       name: "Xinda",
-      description: "Xinda is a project collaborated with my brother",
+      description: "Xinda is a collaborated project",
       slug: "Xinda is a Wood treatment company",
       tech: "Next Js",
       status: "Collaboration",
