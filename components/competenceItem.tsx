@@ -5,14 +5,14 @@ const CompetenceItem = () => {
   const frontSkills = [
     { tech: "HTML", level: "80%" },
     { tech: "CSS", level: "70%" },
-    { tech: "JAVASCRIPT", level: "50%" },
+    { tech: "JAVASCRIPT", level: "60%" },
     { tech: "REACT JS", level: "60%" },
-    { tech: "NEXT JS", level: "50%" },
+    // { tech: "NEXT JS", level: "50%" },
   ];
   const backSkills = [
     { tech: "PHP", level: "70%" },
     { tech: "LARAVEL", level: "60%" },
-    { tech: "PYTHON", level: "40%" },
+    { tech: "PYTHON", level: "20%" },
     { tech: "FIREBASE", level: "50%" },
   ];
   return (
