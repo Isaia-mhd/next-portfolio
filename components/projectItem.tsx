@@ -30,7 +30,7 @@ const ProjectItem = () => {
       tech: "Blade / Laravel",
       status: "Personal",
       imgUrl: "url('/images/ecommerce.png')",
-      url: ""
+      url: "#"
     },
   ];
 
