@@ -3,7 +3,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import React, { useState } from "react";
 
 const ProjectItem = () => {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
   const projects = [
     {
       name: "Xinda",
@@ -12,7 +12,8 @@ const ProjectItem = () => {
       tech: "Next Js",
       status: "Collaboration",
       imgUrl: "url('/images/xinda.png')",
-      url: "https://xinda.mg/"
+      url: "https://xinda.mg/",
+      active: true
     },
     {
       name: "Realtor Clone",
@@ -21,7 +22,8 @@ const ProjectItem = () => {
       tech: "React Js / Firebase",
       status: "Personal",
       imgUrl: "url('/images/realtor.png')",
-      url: "https://isaia-realtor-clone.vercel.app/"
+      url: "https://isaia-realtor-clone.vercel.app/",
+      active: true
     },
     {
       name: "E-Commerce",
@@ -30,7 +32,8 @@ const ProjectItem = () => {
       tech: "Blade / Laravel",
       status: "Personal",
       imgUrl: "url('/images/ecommerce.png')",
-      url: "#"
+      url: "#",
+      active: false
     },
   ];
 
@@ -59,11 +62,11 @@ const ProjectItem = () => {
             ></div>
             <div className="w-full h-[20%] pt-3">
               <div className="w-full flex justify-between items-center">
-                  <h1 className="text-xl text-blue-700 font-semibold"><a className="hover:underline" href={project.url} target="_blank">{project.name}</a></h1>
+                  <h1 className="text-xl text-blue-700 font-semibold"><a className="hover:underline" href={project.url} target={`${project.active && "_blank"} `}>{project.name}</a></h1>
                   <p className="text-xs text-blue-700 font-bold">{project.tech}</p>
               </div>
-              <p className={`ext-sm font-light text-slate-200 pt-3 ${!isActive && "truncate"}`}> {project.description} </p>
-              <button onClick={()=> setIsActive(!isActive)} className="text-blue-700 underline font-semibold text-sm">{isActive ? "See less" : "See more"}</button>
+              <p className={`ext-sm font-light text-slate-200 pt-3`}> {project.description} </p>
+              {/* <button onClick={()=> setIsActive(!isActive)} className="text-blue-700 underline font-semibold text-sm">{isActive ? "See less" : "See more"}</button> */}
     
             </div>
           </div>
