@@ -62,7 +62,7 @@ const ProjectItem = () => {
             ></div>
             <div className="w-full h-[20%] pt-3">
               <div className="w-full flex justify-between items-center">
-                  <h1 className="text-xl text-blue-700 font-semibold"><a className="hover:underline" href={project.url} target={`${project.active ? "_blank" : "_self"} `}>{project.name}</a></h1>
+                  <h1 className="text-xl text-blue-700 font-semibold"><a className="hover:underline" href={project.url} target="_blank" style={!project.active ? { pointerEvents: "none", opacity: 0.5 } : {}}>{project.name}</a></h1>
                   <p className="text-xs text-blue-700 font-bold">{project.tech}</p>
               </div>
               <p className={`ext-sm font-light text-slate-200 pt-3`}> {project.description} </p>
