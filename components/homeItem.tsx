@@ -9,7 +9,7 @@ const HomeItem = () => {
         <h1 className="text-white text-4xl">
           <Typewriter
             options={{
-              strings: ["Hey, I'm Isaia Mohamed", "<>Web Developper</>", "<>Laravel and React Js developper</>"],
+              strings: ["Hey, I'm Isaia Mohamed", "<>Web Developper</>", "<>Laravel</>", "<>and React Js developper</>"],
               autoStart: true,
               loop: true,
               delay: 100,

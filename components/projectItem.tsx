@@ -41,7 +41,7 @@ const ProjectItem = () => {
     <BackgroundBeamsWithCollision className="w-full max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
 
       <div id="project" className="flex flex-col justify-center items-center">
-        <p className="text-4xl font-bold text-purple-700 pt-[60px] ">My Portfolio</p>
+        <p className="text-4xl font-bold text-purple-700 pt-[60px] ">Portfolio</p>
         <p className="text-slate-400 text-sm font-bold">
           &lt;&gt;All projects&lt;/&gt;
         </p>

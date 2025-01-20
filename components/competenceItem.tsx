@@ -18,7 +18,7 @@ const CompetenceItem = () => {
   return (
     <BackgroundBeamsWithCollision className="w-full max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
       <div className="flex flex-col justify-center items-center">
-        <p className="text-4xl font-bold text-purple-700">My Skills</p>
+        <p className="text-4xl font-bold text-purple-700">Skills</p>
         <p className="text-slate-400 text-sm font-bold">
           &lt;&gt;Competences&lt;/&gt;
         </p>
