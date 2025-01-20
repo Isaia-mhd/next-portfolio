@@ -24,6 +24,9 @@ const ContactItem = () => {
 
       if (response.data.message) {
         setStatus('Email was sent successfully!');
+        setTimeout(() => {
+          setStatus('');
+        }, 2000);
         setName('');
         setEmail('');
         setSubject('');
