@@ -3,12 +3,12 @@ import React from "react";
 
 const CompetenceItem = () => {
   const frontSkills = [
-    { tech: "REACT JS", level: "60%" },
-    { tech: "VUE JS", level: "20%" },
+    { tech: "REACT JS", level: "40%"},
+    { tech: "NEXT JS", level: "10%"},
   ];
   const backSkills = [
-    { tech: "LARAVEL", level: "50%" },
-    { tech: "PYTHON", level: "20%" },
+    { tech: "LARAVEL", level: "50%"},
+    { tech: "PYTHON", level: "20%"},
   ];
   return (
     <BackgroundBeamsWithCollision className="w-full max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
