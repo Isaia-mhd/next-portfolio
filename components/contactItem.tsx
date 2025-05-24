@@ -15,12 +15,15 @@ const ContactItem = () => {
     setStatus('Sending...');
 
     try {
-      const response = await axios.post('https://isaia-portfolio-api.up.railway.app/api/send-email', {
-        name,
-        email,
-        subject,
-        message,
-      });
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/send-email`,
+        {
+          name,
+          email,
+          subject,
+          message,
+        }
+      );
 
       if (response.data.message) {
         setStatus('Email was sent successfully!');
